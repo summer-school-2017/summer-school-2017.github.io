@@ -1,0 +1,383 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+
+
+
+
+
+
+
+<header class="ui middle aligned center aligned stackable grid segment">
+
+  <a class="ui blue left corner label">
+  <div id="showTOC" class="popup" data-content="Reveal TOC">
+    <i id="toc" class="sitemap big  icon"></i>
+  </div>
+</a>
+
+  <div class="seven wide center aligned column">
+    <h2 class="headder">  Web Application Development Using Glitch</h2>
+    <p> Top Level Topics </p>
+  </div>
+
+
+  
+    
+<div class="two wide column sitemap">
+  <div class="popup" data-content="To the Portfolio the module is a member of...">
+    <a href="../index.html"> <i class="huge grid layout icon"></i> Portfolio </a>
+  </div>
+</div>
+
+  
+
+  
+<div class="four wide column">
+  <div class="ui center aligned mini message segment">
+    Eamonn de Leastar.
+    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+        target="_blank">Creative Commons License
+    </a>
+  </div>
+</div>
+
+
+  
+<div class="ui two wide right aligned column">
+  <div class="ui left aligned middle aligned very basic grid">
+    <div class="row">
+      <div class="popup" data-content="All Slides in Course">
+        <a href="talkwall.html"> <i class="large film icon"></i> All Slides </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="popup" data-content="All Labs in Course">
+        <a href="labwall.html"> <i class="large lab icon"></i> All Labs </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</header>
+
+
+<div class="ui segment pushable">
+  <div class="ui inverted inline vertical sidebar menu">
+    
+    <div class="header">
+      <a class="item" href="topic-01-html-and-templating/index.html">
+        HTML Templates
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-01-html-and-templating/talk-1-deployment/deployment.pdf">
+          Deployment</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-html-and-templating/talk-2-harp-and-surge/harp.pdf">
+          Harp & Surge</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-html-and-templating/talk-3-html/case-study.pdf">
+          Case Study</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-html-and-templating/talk-4-templates/templates.pdf">
+          Templates</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-html-and-templating/book-00-case-study/index.html">
+          Lab-00a Case Study</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-html-and-templating/book-01-harp/index.html">
+          Lab-01b Harp & Surge</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-html-and-templating/book-02-templates/index.html">
+          Lab-01c Templating</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-01-html-and-templating/book-03-nav/index.html">
+          Lab-01d Navigation </a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-02-css-frameworks/index.html">
+        CSS Frameworks
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-02-css-frameworks/talk-2/sematic-ui-part-1.pdf">
+          Semantic-UI I</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-02-css-frameworks/talk-3/sematic-ui-part-2.pdf">
+          Semantic-UI II</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-02-css-frameworks/talk-4/sematic-ui-part-3.pdf">
+          Semantic-UI III</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-02-css-frameworks/talk-5/semantic-4.pdf">
+          Semantic Part IV</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-02-css-frameworks/book-a/index.html">
+          Lab-02a Semantic UI</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-02-css-frameworks/book-b/index.html">
+          Lab-02b Semantic UI</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic-03-glitch-and-javsscript/index.html">
+        Introduction to Glitch
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic-03-glitch-and-javsscript/talk-a-glitch/glitch.pdf">
+          Introducing Gomix</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-glitch-and-javsscript/talk-b-glitch-tour/glitch-tour.pdf">
+          Glitch Tour</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-glitch-and-javsscript/talk-c-glitch-features/glitch-features.pdf">
+          Gomix Features</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-glitch-and-javsscript/talk-d-js-background/js-background.pdf">
+          JS Introduction</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-glitch-and-javsscript/talk-e-js-varialbes/js-variables.pdf">
+          Variables</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-glitch-and-javsscript/talk-f-js-boolean-logic/js-boolean-logic.pdf">
+          Boolean Logic</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-glitch-and-javsscript/talk-g-js-variables-&-objects/js-variables-&-objects.pdf">
+          Const, Let & Objects</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-glitch-and-javsscript/book-a-glitch-intro/index.html">
+          Lab-1 Gomix Intro</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic-03-glitch-and-javsscript/book-b-js-introduction/index.html">
+          Lab-2 JS Intro</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="pusher">
+    <div class="ui container">
+      <div class="ui basic segment">
+        <div class="ui four doubling stackable cards">
+          
+          
+<div class="ui raised link card">
+  <div class="content">
+    <div class="right floated meta"><i class="sitemap large icon"></i></div>
+    <div class="header"> HTML Templates</div>
+  </div>
+    
+    <a href="./topic-01-html-and-templating/index.html">
+      
+      <div class="image">
+        <img class="ui bordered rounded image" src="./topic-01-html-and-templating/topic.png">
+      </div>
+    </a>
+    <div class="content">
+      <div class="description">
+        <p>Review the HTML &amp; CSS constructs covered so far. Introduce html templating using EJS. Refactor a site to use templating techniques.</p>
+
+      </div>
+    </div>
+  
+  
+</div>
+
+          
+          
+<div class="ui raised link card">
+  <div class="content">
+    <div class="right floated meta"><i class="sitemap large icon"></i></div>
+    <div class="header"> CSS Frameworks</div>
+  </div>
+    
+    <a href="./topic-02-css-frameworks/index.html">
+      
+      <div class="image">
+        <img class="ui bordered rounded image" src="./topic-02-css-frameworks/topic.png">
+      </div>
+    </a>
+    <div class="content">
+      <div class="description">
+        <p>Modern web layouts are not considerably more complex and sophisticated than in the past - particularly as mobile is now considered the &#39;first&#39; destination for any site. To tackle the complex issues CSS Frameworks have arisen as a convenient way to support multiple browsers and different screen sizes &amp; resolutions.</p>
+
+      </div>
+    </div>
+  
+  
+</div>
+
+          
+          
+<div class="ui raised link card">
+  <div class="content">
+    <div class="right floated meta"><i class="sitemap large icon"></i></div>
+    <div class="header"> Introduction to Glitch</div>
+  </div>
+    
+    <a href="./topic-03-glitch-and-javsscript/index.html">
+      
+      <div class="image">
+        <img class="ui bordered rounded image" src="./topic-03-glitch-and-javsscript/talk-a-glitch/glitch.png">
+      </div>
+    </a>
+    <div class="content">
+      <div class="description">
+        <p>An introduction to the Glitch platform + the very basics of the Javascript Language</p>
+
+      </div>
+    </div>
+  
+  
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
