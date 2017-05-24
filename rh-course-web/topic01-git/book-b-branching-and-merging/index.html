@@ -322,15 +322,13 @@ into the original branch again.</p>
  where we made changes. We can now merge those changes back into
  master branch, and delete the <code>my-new-branch</code> since we won&#39;t need it
  any longer.</p>
-<h2>What are the different types of merges in Git?</h2>
-<h3>Fast-forward merging</h3>
 <p>The simplest form of merging is <em>fast-forward</em> merging. Since branches
  are just references to commits, and <code>my-new-branch</code> is a direct
  descendant of the <code>master</code> branch; we can just update the <code>master</code>
  branch to point to the same commit as <code>my-new-branch</code>.</p>
 <p>This is the default way that Git will merge when the target branch is
  an ancestor of the source branch. First, <code>checkout</code> the target branch
- (master in this case), and then use the <code>merge</code> subcommand to bring
+ (<code>master</code> in this case), and then use the <code>merge</code> subcommand to bring
  the changes from the source branch (<code>my-new-branch</code>) into this
  branch:</p>
 <pre><code class="lang-bash">$ git checkout master
@@ -346,10 +344,10 @@ Fast-forward
  the changes into master:</p>
 <pre><code>$ git branch -d my-new-branch
 Deleted branch my-new-branch (was c1e11ad).</code></pre>
-<h3>Merge commits (or <em>non-fast-forward</em> merging)</h3>
+<h3>Merge commits</h3>
 <p>In some cases, the target branch will not be a direct ancestor of the
  source branch. Here, the default action is to create a new commit
- which has two (or more) <em>parent</em> commits.</p>
+ which has two (or more) <em>parent</em> commits and a message.</p>
 <p><img src="img/beforemergecommit1.png" alt="Before creating a merge commit"></p>
 <p>While on the master branch, we can now merge the changes from the
  other branch as follows:</p>
