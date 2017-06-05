@@ -149,6 +149,10 @@ body
       Exercises
     </a>
     
+    <a class="item" data-tab=".">
+      .
+    </a>
+    
     <div class="item">
       
       
@@ -867,6 +871,43 @@ if(firstVariable){
 <li>Is the value of thirdVariable a &quot;truthy&quot; value? <strong>Why?</strong></li>
 </ol>
 <p>Run the script - in the console or in first.js - to see if your answers are correct.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab=".">
+        <h1>Exercise 1:</h1>
+<pre><code>const usersFirstName = prompt(&#39;enter first name&#39;);
+const usersLastName = prompt(&#39;enter first name&#39;);
+const usersAge = prompt(&#39;enter first name&#39;);
+
+const user = {
+  firstName: usersFirstName,
+  lastName: usersFirstName,
+  age: usersFirstName,
+};
+
+console.log(user);</code></pre>
+<h1>Exercise 2:</h1>
+<pre><code>const usersFirstName = prompt(&#39;enter first name&#39;);
+const usersLastName = prompt(&#39;enter last name&#39;);
+const usersAge = prompt(&#39;enter your age&#39;);
+
+const userGreeting = prompt(&#39;enter your greeting&#39;);
+
+const user = {
+  firstName: usersFirstName,
+  lastName: usersFirstName,
+  age: usersFirstName,
+  greeting: userGreeting,
+  sayHello() {
+    console.log(this.greeting + &#39; says &#39; + this.firstName);
+  },
+};
+
+console.log(user);
+user.sayHello();</code></pre>
+<h1>Exercise 3:</h1>
+<pre><code>Have a go yourself!</code></pre>
 
       </div>
      
