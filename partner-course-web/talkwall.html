@@ -40,6 +40,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -70,13 +77,12 @@ figcaption
 
   
 
-
-
 <div class="two wide column sitemap">
   <div class="popup" data-content="To the top level Topics for this Module...">
-    <a href="index.html"> <i class="huge home icon"></i> Module </a>
+    <a href="index.html"> <i class="huge home icon"></i> <br> Module Home </a>
   </div>
 </div>
+
 
   
 <div class="four wide column">
@@ -326,6 +332,7 @@ figcaption
     <script>
       $(document).ready(function () {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
@@ -338,8 +345,6 @@ figcaption
       $(divLabel).insertBefore($images[i]);
     }
   });
-
-  $('.ui.embed').embed();
 
   $('.ui.menu .item')
       .tab({

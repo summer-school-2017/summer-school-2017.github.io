@@ -40,6 +40,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -958,6 +965,7 @@ user.sayHello();</code></pre>
     <script>
       $(document).ready(function () {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
@@ -970,8 +978,6 @@ user.sayHello();</code></pre>
       $(divLabel).insertBefore($images[i]);
     }
   });
-
-  $('.ui.embed').embed();
 
   $('.ui.menu .item')
       .tab({

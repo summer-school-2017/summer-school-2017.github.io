@@ -40,6 +40,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -444,6 +451,7 @@ Scrum Masters are the champion for scrum within their team. They coach the team,
     <script>
       $(document).ready(function () {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
@@ -456,8 +464,6 @@ Scrum Masters are the champion for scrum within their team. They coach the team,
       $(divLabel).insertBefore($images[i]);
     }
   });
-
-  $('.ui.embed').embed();
 
   $('.ui.menu .item')
       .tab({

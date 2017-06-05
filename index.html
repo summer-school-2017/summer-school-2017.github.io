@@ -40,6 +40,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -232,6 +239,7 @@ figcaption
     <script>
       $(document).ready(function () {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
@@ -244,8 +252,6 @@ figcaption
       $(divLabel).insertBefore($images[i]);
     }
   });
-
-  $('.ui.embed').embed();
 
   $('.ui.menu .item')
       .tab({

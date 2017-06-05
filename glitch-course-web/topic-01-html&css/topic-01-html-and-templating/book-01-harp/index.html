@@ -40,6 +40,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -551,6 +558,7 @@ C:\dev\iot-web&gt;</code></pre>
     <script>
       $(document).ready(function () {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
@@ -563,8 +571,6 @@ C:\dev\iot-web&gt;</code></pre>
       $(divLabel).insertBefore($images[i]);
     }
   });
-
-  $('.ui.embed').embed();
 
   $('.ui.menu .item')
       .tab({
