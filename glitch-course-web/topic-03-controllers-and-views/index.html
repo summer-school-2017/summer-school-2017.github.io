@@ -99,9 +99,10 @@ figcaption
 
     </div>
 
-    <div class="four wide column">
+    <div class="three wide column">
       
     </div>
+
 
   </header>
   
@@ -173,6 +174,7 @@ figcaption
          
   
     <section class="ui attached segment">
+      <a class="ui right ribbon label">videos</a>
       <div class="ui centered four doubling stackable cards">
         
           
@@ -183,7 +185,7 @@ figcaption
       <div class="header"> Reviewing Javascript Types</div>
     </div>
     <div class="ui segment">
-      <div class="ui embed" data-source="youtube" data-id=""></div>
+      <div class="ui embed" data-source="youtube" data-id="dBhq0ijDz4k"></div>
     </div>
     <div class="center aligned content">
       <div class="description">
@@ -192,7 +194,7 @@ figcaption
       </div>
     </div>
     <div class="extra content center aligned">
-      <a href="https://youtu.be/" target="_blank"> video link</a>
+      <a href="https://youtu.be/dBhq0ijDz4k" target="_blank"> video link</a>
     </div>
   </div>
 
@@ -206,7 +208,7 @@ figcaption
       <div class="header"> The Essentials of MVC in Node</div>
     </div>
     <div class="ui segment">
-      <div class="ui embed" data-source="youtube" data-id=""></div>
+      <div class="ui embed" data-source="youtube" data-id="udLyH6BUUBA"></div>
     </div>
     <div class="center aligned content">
       <div class="description">
@@ -215,7 +217,7 @@ figcaption
       </div>
     </div>
     <div class="extra content center aligned">
-      <a href="https://youtu.be/" target="_blank"> video link</a>
+      <a href="https://youtu.be/udLyH6BUUBA" target="_blank"> video link</a>
     </div>
   </div>
 
@@ -229,6 +231,7 @@ figcaption
          
   
     <section class="ui attached segment">
+      <a class="ui right ribbon label">talks</a>
       <div class="ui centered four doubling stackable cards">
         
           
@@ -389,6 +392,7 @@ figcaption
          
   
     <section class="ui attached segment">
+      <a class="ui right ribbon label">labs</a>
       <div class="ui centered four doubling stackable cards">
         
           
@@ -503,34 +507,37 @@ figcaption
 
     </footer>
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
 
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>

@@ -99,9 +99,10 @@ figcaption
 
     </div>
 
-    <div class="four wide column">
+    <div class="three wide column">
       
     </div>
+
 
   </header>
   
@@ -141,8 +142,16 @@ figcaption
             Gym V2 Specification
           </a>
         
-          <a class="item" href="video-c/LoTBTQpHz1I">
+          <a class="item" href="video-a/LoTBTQpHz1I">
             Module Assignment
+          </a>
+        
+          <a class="item" href="video-b/mQvWJGarfH4">
+            Assignment Q&A
+          </a>
+        
+          <a class="item" href="video-c//ADbfF7LYpBc">
+            JPA
           </a>
         
           <a class="item" href="github-play-gym-web/https://github.com/wit-ict-summer-school-2017/play-gym-web">
@@ -157,6 +166,7 @@ figcaption
          
   
     <section class="ui attached segment">
+      <a class="ui right ribbon label">videos</a>
       <div class="ui centered four doubling stackable cards">
         
           
@@ -167,7 +177,7 @@ figcaption
       <div class="header"> Module Assignment</div>
     </div>
     <div class="ui segment">
-      <div class="ui embed" data-source="youtube" data-id=""></div>
+      <div class="ui embed" data-source="youtube" data-id="LoTBTQpHz1I"></div>
     </div>
     <div class="center aligned content">
       <div class="description">
@@ -176,7 +186,53 @@ figcaption
       </div>
     </div>
     <div class="extra content center aligned">
-      <a href="https://youtu.be/" target="_blank"> video link</a>
+      <a href="https://youtu.be/LoTBTQpHz1I" target="_blank"> video link</a>
+    </div>
+  </div>
+
+          
+        
+          
+            
+  <div class="ui raised link card">
+    <div class="ui center aligned content">
+      <div class="right floated meta"><i class="huge film icon"></i></div>
+      <div class="header"> Assignment Q&A</div>
+    </div>
+    <div class="ui segment">
+      <div class="ui embed" data-source="youtube" data-id="mQvWJGarfH4"></div>
+    </div>
+    <div class="center aligned content">
+      <div class="description">
+        <p>Discussion and presentation on the Module Assignment.</p>
+
+      </div>
+    </div>
+    <div class="extra content center aligned">
+      <a href="https://youtu.be/mQvWJGarfH4" target="_blank"> video link</a>
+    </div>
+  </div>
+
+          
+        
+          
+            
+  <div class="ui raised link card">
+    <div class="ui center aligned content">
+      <div class="right floated meta"><i class="huge film icon"></i></div>
+      <div class="header"> JPA</div>
+    </div>
+    <div class="ui segment">
+      <div class="ui embed" data-source="youtube" data-id="/ADbfF7LYpBc"></div>
+    </div>
+    <div class="center aligned content">
+      <div class="description">
+        <p>Detailed walk through the Java Persistence Architecture. This is the API underpinning the persistence layer in the Play framework.</p>
+
+      </div>
+    </div>
+    <div class="extra content center aligned">
+      <a href="https://youtu.be//ADbfF7LYpBc" target="_blank"> video link</a>
     </div>
   </div>
 
@@ -190,6 +246,7 @@ figcaption
          
   
     <section class="ui attached segment">
+      <a class="ui right ribbon label">talks</a>
       <div class="ui centered four doubling stackable cards">
         
           
@@ -290,6 +347,7 @@ figcaption
          
   
     <section class="ui attached segment">
+      <a class="ui right ribbon label">gits</a>
       <div class="ui centered four doubling stackable cards">
         
           
@@ -334,6 +392,7 @@ figcaption
          
   
     <section class="ui attached segment">
+      <a class="ui right ribbon label">topics</a>
       <div class="ui centered four doubling stackable cards">
         
           
@@ -380,34 +439,37 @@ figcaption
 
     </footer>
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
 
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>
