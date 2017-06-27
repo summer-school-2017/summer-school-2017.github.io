@@ -292,7 +292,7 @@ public class PlayerTest extends UnitTest
 <pre><code>play test</code></pre>
 <p>...and navigate to the test runner page:</p>
 <ul>
-<li><a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x68;&#x74;&#116;&#x70;&#58;&#x2f;&#47;&#x6c;&#x6f;&#x63;&#x61;&#x6c;&#104;&#x6f;&#115;&#x74;&#58;&#x39;&#x30;&#48;&#48;&#47;&#x40;&#x74;&#x65;&#115;&#116;&#x73;">&#x68;&#x74;&#116;&#x70;&#58;&#x2f;&#47;&#x6c;&#x6f;&#x63;&#x61;&#x6c;&#104;&#x6f;&#115;&#x74;&#58;&#x39;&#x30;&#48;&#48;&#47;&#x40;&#x74;&#x65;&#115;&#116;&#x73;</a></li>
+<li><a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#104;&#x74;&#116;&#x70;&#58;&#47;&#x2f;&#108;&#111;&#99;&#x61;&#108;&#x68;&#111;&#x73;&#x74;&#x3a;&#57;&#x30;&#48;&#x30;&#x2f;&#x40;&#x74;&#x65;&#115;&#x74;&#115;">&#104;&#x74;&#116;&#x70;&#58;&#47;&#x2f;&#108;&#111;&#99;&#x61;&#108;&#x68;&#111;&#x73;&#x74;&#x3a;&#57;&#x30;&#48;&#x30;&#x2f;&#x40;&#x74;&#x65;&#115;&#x74;&#115;</a></li>
 </ul>
 <p>This will look like this initially:</p>
 <p><img src="img/01x.png" alt=""></p>
@@ -301,7 +301,7 @@ public class PlayerTest extends UnitTest
 <p>and they should be green. The tests are empty - but we have just verified that the test harness is functioning correctly.</p>
 <p>Also try the database interface:</p>
 <ul>
-<li><a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x68;&#116;&#x74;&#x70;&#x3a;&#x2f;&#47;&#x6c;&#111;&#x63;&#97;&#108;&#104;&#x6f;&#115;&#116;&#x3a;&#x39;&#x30;&#48;&#48;&#x2f;&#x40;&#x64;&#x62;">&#x68;&#116;&#x74;&#x70;&#x3a;&#x2f;&#47;&#x6c;&#111;&#x63;&#97;&#108;&#104;&#x6f;&#115;&#116;&#x3a;&#x39;&#x30;&#48;&#48;&#x2f;&#x40;&#x64;&#x62;</a></li>
+<li><a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#x74;&#116;&#112;&#58;&#47;&#x2f;&#x6c;&#x6f;&#99;&#x61;&#x6c;&#x68;&#x6f;&#115;&#x74;&#x3a;&#x39;&#x30;&#48;&#48;&#x2f;&#64;&#x64;&#x62;">&#x68;&#x74;&#116;&#112;&#58;&#47;&#x2f;&#x6c;&#x6f;&#99;&#x61;&#x6c;&#x68;&#x6f;&#115;&#x74;&#x3a;&#x39;&#x30;&#48;&#48;&#x2f;&#64;&#x64;&#x62;</a></li>
 </ul>
 
       </div>
@@ -338,7 +338,7 @@ public class PlayerTest extends UnitTest
   { 
   }
 }</code></pre>
-<p>Run the tests - and have a look at the database admin interface (<a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#104;&#x74;&#116;&#112;&#x3a;&#x2f;&#x2f;&#108;&#111;&#x63;&#97;&#108;&#x68;&#111;&#x73;&#x74;&#58;&#x39;&#x30;&#x30;&#x30;&#47;&#64;&#100;&#98;">&#104;&#x74;&#116;&#112;&#x3a;&#x2f;&#x2f;&#108;&#111;&#x63;&#97;&#108;&#x68;&#111;&#x73;&#x74;&#58;&#x39;&#x30;&#x30;&#x30;&#47;&#64;&#100;&#98;</a>). Can you see any player objects? No because teardown() is deleteing all of the objects. Comment out the @After annotation:</p>
+<p>Run the tests - and have a look at the database admin interface (<a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#104;&#116;&#x74;&#x70;&#58;&#x2f;&#x2f;&#108;&#111;&#x63;&#97;&#108;&#x68;&#x6f;&#115;&#x74;&#58;&#57;&#x30;&#48;&#x30;&#47;&#x40;&#100;&#x62;">&#104;&#116;&#x74;&#x70;&#58;&#x2f;&#x2f;&#108;&#111;&#x63;&#97;&#108;&#x68;&#x6f;&#115;&#x74;&#58;&#57;&#x30;&#48;&#x30;&#47;&#x40;&#100;&#x62;</a>). Can you see any player objects? No because teardown() is deleteing all of the objects. Comment out the @After annotation:</p>
 <pre><code class="lang-java"> //@After</code></pre>
 <p>and run the tests again. This time - if you refresh the database page - you will see the three player objects.  Being able to see them in the database interface can be particularly useful if you are introducing new relationships between objects.</p>
 <p>Now we will bring in  utility function into the Player class:</p>
